@@ -19,7 +19,7 @@ public class DemoSemaineSwitch {
                 case "2":
                     System.out.println("mardi");
                     break;
-                // ... 3-6
+                // à complèter les cas 3, 4, 5 et 6
                 case "7":
                     System.out.println("dimanche");
                     break;
