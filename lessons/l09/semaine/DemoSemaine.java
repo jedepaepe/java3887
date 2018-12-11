@@ -2,7 +2,7 @@ package semaine;
 
 
 import java.util.Scanner;
-
+// voilà
 public class DemoSemaine {
 
     public static void main(String[] args) {
