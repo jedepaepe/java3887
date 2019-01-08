@@ -10,9 +10,11 @@ public class Chocolat extends Aliment {
      * 3) la méthode / constructeur doit avoir le même nom que la classe
      *      Chocolat noir = new Chocolat("emballage de luxe");
      *      Aliment chocolatNoir = new Chocolat("emballage de luxe");
+     * @param nom
      * @param emballage 
      */
     public Chocolat(String emballage, String nom) {
+        // super doit être la première
         super(nom); // constructeur de la classe mère "new Aliment(nom);"
         this.emballage = emballage;
     }
