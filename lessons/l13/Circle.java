@@ -81,4 +81,13 @@ public class Circle extends GeometricObject{
     public double getDiameter() {
         return 2 * radius;
     }
+
+	/* génère une String avec les attributs de Circle
+	 * @param version String des attributs de Circle
+	 */
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + ", " + super.toString() + "]";
+	}
+    
 }

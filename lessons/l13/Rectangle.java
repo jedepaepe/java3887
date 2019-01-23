@@ -11,7 +11,7 @@ public class Rectangle extends GeometricObject {
 	private double width = 1.;
 	
 	/**
-	 * hauteur du rectangle
+	 * longueur du rectangle
 	 */
 	private double length = 1.;
 	
@@ -25,10 +25,23 @@ public class Rectangle extends GeometricObject {
 	/**
 	 * Constructeur avec 2 paramètres
 	 * @param width est la largeur du rectangle
-	 * @param length est la hauteur du rectangle
+	 * @param length est la longueur du rectangle
 	 */
 	public Rectangle(double width, double length) {
 		super();
+		this.width = width;
+		this.length = length;
+	}
+	
+	/**
+	 * Constructeur avec 4 paramètres
+	 * @param width est la largeur du rectangle
+	 * @param length est la longueur du rectangle
+	 * @param color est la couleur
+	 * @param filled indique si le rectangle colorié à l'intérieur
+	 */
+	public Rectangle(double width, double length, String color, boolean filled) {
+		super(color, filled);
 		this.width = width;
 		this.length = length;
 	}
@@ -50,23 +63,23 @@ public class Rectangle extends GeometricObject {
 	}
 
 	/**
-	 * getter (pour lire) de la hauteur
-	 * @return la hauteur
+	 * getter (pour lire) de la longueur
+	 * @return la longueur
 	 */
 	public double getLength() {
 		return length;
 	}
 
 	/**
-	 * setter (pour écrire) la hauteur
-	 * @param length est la nouvelle hauteur
+	 * setter (pour écrire) la longueur
+	 * @param length est la nouvelle longueur
 	 */
 	public void setLength(double length) {
 		this.length = length;
 	}
 	
 	/**
-	 * calcule l'aire du rectangle (largeur * hauteur)
+	 * calcule l'aire du rectangle (largeur * longueur)
 	 * @return l'aire
 	 */
 	public double getArea() {
@@ -74,11 +87,19 @@ public class Rectangle extends GeometricObject {
 	}
 	
 	/**
-	 * calcule le périmètre 2 * hauteur + 2 * largeur
+	 * calcule le périmètre 2 * longueur + 2 * largeur
 	 * @return le périmètre
 	 */
 	public double getPerimeter() {
 		return 2 * (width + length);
+	}
+
+	/* génère une String avec les attributs de Rectangle
+	 * @param version String des attributs de Rectangle
+	 */
+	@Override
+	public String toString() {
+		return "Rectangle [width=" + width + ", length=" + length + ", " + super.toString() + "]";
 	}
 
 }

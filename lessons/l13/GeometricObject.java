@@ -95,5 +95,4 @@ public abstract class GeometricObject {
     public String toString() {
         return "GeometricObject{" + "color=" + color + ", filled=" + filled + ", createdAt=" + createdAt + '}';
     }
-    
 }
