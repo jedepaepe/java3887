@@ -10,8 +10,8 @@ public class TestGeom {
 		System.out.println("couleur: " + circle.getColor());
 		System.out.println("filled: " + circle.isFilled());
 		System.out.println("rayon: " + circle.getRadius());
-		System.out.println("diamètre: " + circle.getDiameter());
-		System.out.println("périmètre: " + circle.getPerimeter());
+		System.out.println("diï¿½tre: " + circle.getDiameter());
+		System.out.println("pï¿½rimï¿½tre: " + circle.getPerimeter());
 		System.out.println("aire: " + circle.getArea());
 		System.out.println(circle.toString());
 		
@@ -29,7 +29,7 @@ public class TestGeom {
 		System.out.println("filled: " + rectangle.isFilled());
 		System.out.println("largeur: " + rectangle.getWidth());
 		System.out.println("longueur: " + rectangle.getLength());
-		System.out.println("périmètre: " + rectangle.getPerimeter());
+		System.out.println("pï¿½rimï¿½tre: " + rectangle.getPerimeter());
 		System.out.println("aire: " + rectangle.getArea());
 		System.out.println(rectangle.toString());
 		

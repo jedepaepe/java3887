@@ -1,46 +1,46 @@
-
 import java.util.Date;
 
 /**
+ * (classe de type Model)
  * Top level of the hierarchy
  * We put it as abstract because we don't want to instantiate it
  * 		that is logical : how to draw it?
  */
 public abstract class GeometricObject {
-    // l'initialisation des attributs est exécuté lors de l'appel du constructeur
+    // l'initialisation des attributs est exÃ©cutÃ© lors de l'appel du constructeur
     //      vous pouvez tester en mode DEBUG
 	
 	/**
-	 * couleur de la forme, valeur par défaut est "vert"
+	 * couleur de la forme, valeur par dÃ©faut est "vert"
 	 */
     private String color = "vert";
     
     /**
-     * indique si la forme est peinte (true: peinte à l'intérieur, false: seulement le bord), valeur par défaut : true
+     * indique si la forme est peinte (true: peinte Ã  l'intÃ©rieur, false: seulement le bord), valeur par dÃ©faut : true
      */
     private boolean filled = true;
     
     /**
-     * date de création de l'objet
-     * 	constante initialisée à l'heure courante
+     * date de crÃ©ation de l'objet
+     * 	constante initialisÃ©e Ã  l'heure courante
      */
     private final Date createdAt = new Date();
 
     /**
-     * Constructeur sans paramètre
+     * Constructeur sans paramÃ¨tre
      */
     public GeometricObject() {
     }
 
     /**
-     * Contructeur avec paramètres
+     * Contructeur avec paramÃ¨tres
      * @param color
      * @param filled 
      */
     public GeometricObject(String color, boolean filled) {
-    	// this est la référence sur l'instance courante de GeometricObject (l'objet courant)
-    	// ici, on est obligé de l'écrire car une "conflit" de noms entre
-    	//		color qui est le paramètre du constructeur "GoemetricObjec(String color, ..." ligne 28
+    	// this est la rÃ©fÃ©rence sur l'instance courante de GeometricObject (l'objet courant)
+    	// ici, on est obligÃ© de l'Ã©crire car une "conflit" de noms entre
+    	//		color qui est le paramÃ¨tre du constructeur "GoemetricObjec(String color, ..." ligne 28
     	//		color qui est l'attribut de la classe GeometricObject "private String color = "vert"; ligne 12
         this.color = color;
         this.filled = filled;
@@ -72,7 +72,7 @@ public abstract class GeometricObject {
     }
 
     /**
-     * setter de filled : assigne une nouvelle valeur à filled
+     * setter de filled : assigne une nouvelle valeur Ã  filled
      * @param filled 
      */
     public void setFilled(boolean filled) {
@@ -81,14 +81,14 @@ public abstract class GeometricObject {
 
     /**
      * getter de createdAt
-     * @return la date de création de l'objet
+     * @return la date de crÃ©ation de l'objet
      */
     public Date getCreatedAt() {
         return createdAt;
     }
     
     /**
-     * retourne une String qui représente l'objet
+     * retourne une String qui reprÃ©sente l'objet
      * @return la String
      */
     @Override

@@ -1,7 +1,8 @@
 
 /**
+ * (classe de type Model)
  * classe pour simuler un Rectangle
- *  	hérite de GeometricObject
+ *  	hÃ©rite de GeometricObject
  */
 public class Rectangle extends GeometricObject {
 	
@@ -16,14 +17,14 @@ public class Rectangle extends GeometricObject {
 	private double length = 1.;
 	
 	/**
-	 * Constructeur sans paramètre
+	 * Constructeur sans paramÃ¨tre
 	 */
 	public Rectangle() {
 		super();
 	}
 
 	/**
-	 * Constructeur avec 2 paramètres
+	 * Constructeur avec 2 paramÃ¨tres
 	 * @param width est la largeur du rectangle
 	 * @param length est la longueur du rectangle
 	 */
@@ -34,11 +35,11 @@ public class Rectangle extends GeometricObject {
 	}
 	
 	/**
-	 * Constructeur avec 4 paramètres
+	 * Constructeur avec 4 paramÃ¨tres
 	 * @param width est la largeur du rectangle
 	 * @param length est la longueur du rectangle
 	 * @param color est la couleur
-	 * @param filled indique si le rectangle colorié à l'intérieur
+	 * @param filled indique si le rectangle coloriÃ© Ã  l'intÃ©rieur
 	 */
 	public Rectangle(double width, double length, String color, boolean filled) {
 		super(color, filled);
@@ -55,7 +56,7 @@ public class Rectangle extends GeometricObject {
 	}
 
 	/**
-	 * setter (pour écrire) la largeur
+	 * setter (pour Ã©crire) la largeur
 	 * @param width est la nouvelle largeur
 	 */
 	public void setWidth(double width) {
@@ -71,7 +72,7 @@ public class Rectangle extends GeometricObject {
 	}
 
 	/**
-	 * setter (pour écrire) la longueur
+	 * setter (pour Ã©crire) la longueur
 	 * @param length est la nouvelle longueur
 	 */
 	public void setLength(double length) {
@@ -87,14 +88,14 @@ public class Rectangle extends GeometricObject {
 	}
 	
 	/**
-	 * calcule le périmètre 2 * longueur + 2 * largeur
-	 * @return le périmètre
+	 * calcule le pÃ©rimÃ¨tre 2 * longueur + 2 * largeur
+	 * @return le pÃ©rimÃ¨tre
 	 */
 	public double getPerimeter() {
 		return 2 * (width + length);
 	}
 
-	/* génère une String avec les attributs de Rectangle
+	/* gÃ©nÃ¨re une String avec les attributs de Rectangle
 	 * @param version String des attributs de Rectangle
 	 */
 	@Override
